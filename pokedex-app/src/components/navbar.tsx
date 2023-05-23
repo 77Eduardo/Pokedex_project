@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Logo from '../assets/Logo.svg'
 
 export const Navbar = () => {
@@ -11,25 +12,25 @@ export const Navbar = () => {
   
             <ul className='md:flex items-center font-Karla gap-6 '>
 
-                <li className="font-medium text-dark py-3
+                <Link to="/"><li className="font-medium text-dark py-3
                 hover:border-b-2 hover:rounded-b-lg w-full hover:border-pharagraph
                 hover:text-pharagraph after:content-[''] 
-                group-hover:opacity-100 group-focus:opacity-100">Home</li>
+                group-hover:opacity-100 group-focus:opacity-100">Home</li></Link>
 
-                <li className="font-medium text-dark py-3
+                <Link to="/pokedex"><li className="font-medium text-dark py-3
                 hover:border-b-2 hover:rounded-b-lg w-full hover:border-pharagraph
                 hover:text-pharagraph after:content-[''] 
-                group-hover:opacity-100 group-focus:opacity-100">Pokédex</li>
+                group-hover:opacity-100 group-focus:opacity-100">Pokédex</li></Link>
 
-                <li className="font-medium text-dark py-3
+                <Link to="/lendarios"><li className="font-medium text-dark py-3
                 hover:border-b-2 hover:rounded-b-lg w-full hover:border-pharagraph
                 hover:text-pharagraph after:content-[''] 
-                group-hover:opacity-100 group-focus:opacity-100">Lendarios</li>
+                group-hover:opacity-100 group-focus:opacity-100">Lendarios</li></Link>
 
-                <li className="font-medium text-dark py-3
+                <Link to="/documentacao"><li className="font-medium text-dark py-3
                 hover:border-b-2 hover:rounded-b-lg w-full hover:border-pharagraph
                 hover:text-pharagraph after:content-[''] 
-                group-hover:opacity-100 group-focus:opacity-100">Documentaçao</li>
+                group-hover:opacity-100 group-focus:opacity-100">Documentaçao</li></Link>
             </ul>  
 
         </div>            
