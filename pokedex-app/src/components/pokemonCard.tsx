@@ -91,13 +91,6 @@ interface PokemonResult {
           });
       }, []);
 
-
-      const getTypeBackgroundColor = (type: string) => {
-        const colorClass = typePokemonsColors[type.toLowerCase()];
-        return colorClass ? colorClass : "";
-      };
-    
-
       return (
         <div className="grid grid-cols-3 gap-8">
           {pokemons &&
@@ -161,4 +154,3 @@ interface PokemonResult {
     </div>
   );
 };
-
