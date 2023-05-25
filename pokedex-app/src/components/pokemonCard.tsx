@@ -91,22 +91,20 @@ interface PokemonResult {
           });
       }, []);
 
-<<<<<<< Updated upstream
-
-  
-
-=======
->>>>>>> Stashed changes
       return (
         <div className="grid grid-cols-3 gap-8">
-              <div className="rounded-md flex items-center">
+          {pokemons &&
+            pokemons.map((pokemon) => (
+              <div key={pokemon.name} className="rounded-md flex items-center">
                 <div className="flex-grow">
-                  <p className="text-pharagraph font-bold text-center pb-2"></p>          
+                  <p className="text-pharagraph font-bold text-center pb-2">{pokemon.name}</p>
+                  {pokemon.details && (
                     <div className="text-[#4B4B4B] font-normal text-center">
                       <div className="flex justify-center">
                         <div className="flex flex-col items-center mx-1">
                           <div className="rounded-full bg-white border-[3px] border-pharagraph w-8 h-8 flex items-center justify-center">
-                            <span className="text-black">                            
+                            <span className="text-black">
+                              {pokemon.details.stats.find((stat) => stat.stat.name === "attack")?.base_stat}
                             </span>
                           </div>
                           <span className="mt-1 text-[#4B4B4B] font-normal">Ataque</span>
@@ -114,33 +112,13 @@ interface PokemonResult {
                         <div className="flex flex-col items-center mx-1">
                           <div className="rounded-full bg-white border-[3px] border-pharagraph w-8 h-8 flex items-center justify-center">
                             <span className="text-black">
+                              {pokemon.details.stats.find((stat) => stat.stat.name === "defense")?.base_stat}
                             </span>
                           </div>
                           <span className="mt-1 text-[#4B4B4B] font-normal">Defesa</span>
                         </div>
                       </div>
                     </div>
-<<<<<<< Updated upstream
-
-                      <div className="flex justify-center items-center mt-3 space-x-2">
-                          <p className="px-2 py-1 text-sm rounded-[11px] font-normal text-[#212121] shadow-custom1"  
-                          >
-                          </p>
-                      </div>
-                </div>
-              <div className="w-[250.25px] h-[250.86px] mt-4">
-                <div className="w-full h-full" >
-                 
-        
-               </div>
-            </div>
-        </div>
-    </div>
-      )
-}
-            
-     
-=======
                   )}
                   {pokemon.details &&
                     Array.isArray(pokemon.details.types) &&
@@ -176,4 +154,3 @@ interface PokemonResult {
     </div>
   );
 };
->>>>>>> Stashed changes
