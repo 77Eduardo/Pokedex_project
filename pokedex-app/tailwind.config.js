@@ -7,7 +7,8 @@ export default {
     extend: {
       boxShadow: {
         'custom': 'inset 0px -3px 4px rgba(1, 28, 68, 0.20)',
-        'custom2': 'inset 0px -9px 0px rgba(0, 0, 0, 0.18)'
+        'custom2': 'inset 0px -9px 0px rgba(0, 0, 0, 0.18)',
+        'custom3': '4px 4px 16px rgba(1, 28, 64, 0.2)'
       },
       colors: {
         'third': '#F5DB13',
