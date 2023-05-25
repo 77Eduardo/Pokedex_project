@@ -1,5 +1,10 @@
+import { PokemonCard } from "../components/pokemonCard";
+
 export const Pokedex = () => {
+
     return (
+
+
  <section className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-[#FFFFFF] to-[#F5F5F5]">
        <header className="text-center">
           <h1 className="font-normal text-5xl mt-7 mb-6">
@@ -14,10 +19,11 @@ export const Pokedex = () => {
         type="text" placeholder="Find your pokemon..." />
         </div>
         <div className="grid grid-rows-1 w-full">
-
+        <PokemonCard />
         </div>
         <footer className="mt-auto p-4">
         </footer>
       </section>
-    )
-}
+  )
+};
+
