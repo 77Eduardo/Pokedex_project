@@ -4,7 +4,7 @@ Desenvolvido com React + TypeScrip + vite
 
 ## Sobre
 
-E um projeto que tem como objetivo consumir a Api podemon https://pokeapi.co/ 
+E um projeto que tem como objetivo consumir a Api pokemon https://pokeapi.co/ 
 onde possui a landing page e a page pokedex onde irao aparecer os pokemons 
 
 ## Instalação
