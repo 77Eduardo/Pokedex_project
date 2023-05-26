@@ -5,6 +5,7 @@ import { Home } from './page/home'
 import { Pokedex } from './page/pokedex'
 import { Lendarios } from './page/lendarios'
 import { Documentacao } from './page/documentacao'
+import NotFound from './components/notfound'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
               <Route path="/pokedex" element={<Pokedex />} />
               <Route path="/lendarios" element={<Lendarios/>} />
               <Route path="/documentacao" element={<Documentacao />} />
+              <Route path="*" element={<NotFound />} />
           </Routes>
         </Router>
         <Footer />
