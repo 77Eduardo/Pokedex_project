@@ -1,13 +1,14 @@
 # Projeto Pokedex 
-Desenvolvido com React + TypeScrip + vite
-
+Desenvolvido com React + TypeScrip + vite + Axios + Tailwind
 
 ## Sobre
 
 E um projeto que tem como objetivo consumir a Api pokemon https://pokeapi.co/ 
-onde possui a landing page e a page pokedex onde irao aparecer os pokemons 
+onde possui a landing page, pokedex onde irao aparecer os pokemons, os pokemons lendarios e 
+a documentação
 
 ## Instalação
+
 A istalacao do vite com react
 
 npm create vite@latest my-vue-app -- --template react.ts
