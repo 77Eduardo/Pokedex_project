@@ -12,6 +12,7 @@ a documentação
 A istalacao do vite com react
 
 npm create vite@latest my-vue-app -- --template react.ts
+
 https://vitejs.dev/guide/
 
 intalacao do axios
